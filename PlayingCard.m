@@ -12,7 +12,7 @@
 - (NSString *)contents {
     NSArray *rankStrings = [PlayingCard rankStrings];
     
-    NSLog(@"%@",[super contents]); // Where is ivar ?
+    NSLog(@"%@  - We waste memory here, we have not used space for the ivar!",[super contents]); // Where is ivar ?
    
     return [rankStrings[self.rank] stringByAppendingString: self.suit];
 }
